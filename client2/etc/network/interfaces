@@ -19,6 +19,7 @@ netmask 255.255.255.0
 gateway 192.168.1.1
 metric 100
 post-up /etc/network/rt-table 101 up
+post-up /etc/init.d/openvpn restart tun10 || true
 post-down /etc/network/rt-table 101 down
 
 auto eth2
@@ -28,6 +29,7 @@ netmask 255.255.255.0
 gateway 192.168.2.1
 metric 200
 post-up /etc/network/rt-table 102 up
+post-up /etc/init.d/openvpn restart tun10_2 || true
 post-down /etc/network/rt-table 102 down
 
 auto eth3

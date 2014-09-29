@@ -4,7 +4,7 @@ Failover for OpenVPN L3 channel from client with 2 uplinks. VPN channels with si
 
 You can not get this behaviour with config 'route' option, because it establishes routes even if connection is not realy alive. This is why you need scripts.
 
-I tried to make scripts convenient: routes are written to separate file, so you may have opne script, and many tunnel configs with routes file for each pari. Example:
+I tried to make scripts convenient: routes are written to separate file, so you may have one script, and many tunnel configs with routes file for each pair. Example:
 
 ```
 # First failover connection

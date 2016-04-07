@@ -1,5 +1,3 @@
-# DESCRIPTION
-
 Failover for OpenVPN L3 channel from client with 2 uplinks. VPN channels with similar routes, but different metrics are established over both uplinks. If one if VPN connection fails, it's routes are deleted, and other connection routes begin to work.
 
 You can not get this behaviour with config 'route' option, because it establishes routes even if connection is not realy alive. This is why you need scripts.
@@ -23,3 +21,5 @@ tun2.routes
 
 ovpn-routes
 ```
+
+**P.S.** If this code is useful for you - don't forget to put a star on it's [github repo](https://github.com/selivan/opvn-2uplinks-failover).
